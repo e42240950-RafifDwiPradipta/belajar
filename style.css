@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px; /* Height of the navbar */
+    transition: background-color 0.4s, color 0.4s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080'); /* Ganti dengan gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Section Styling */
+section {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.4s, color 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Clock Styling */
+#clock {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h5 {
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+    color: #e0e0e0;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-text {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: #1f1f1f !important;
+}
